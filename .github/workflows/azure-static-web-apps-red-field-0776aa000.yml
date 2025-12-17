@@ -21,12 +21,12 @@ jobs:
           lfs: false
 
       - name: Set Node version for Oryx
-        run: echo "NODE_VERSION=20.19.0" >> $GITHUB_ENV
+        run: echo "NODE_VERSION=20.19.5" >> $GITHUB_ENV
     
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: '20.19.5'
 
       - name: Build And Deploy
         id: builddeploy
@@ -53,4 +53,5 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_RED_FIELD_0776AA000 }}
           action: "close"
+
 
