@@ -26,7 +26,7 @@ export class App implements OnInit {
   // 🔹 Start SignalR connection (ONLY for ACKs)
   private startSignalR() {
     this.hub = new signalR.HubConnectionBuilder()
-      .withUrl('https://localhost:7187/eventsHub', {   
+      .withUrl('https://https://vertical-notification-api-h7guhgbnh8d4c2fc.southindia-01.azurewebsites.net/eventsHub', {   
         withCredentials: false   // IMPORTANT
     })
       .withAutomaticReconnect()
